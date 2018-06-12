@@ -1,0 +1,163 @@
+
+.markbox{
+    display: flex;
+    height:100%;
+}
+.mark-left {
+    bottom: 0;
+    width: 23.75%;
+    height:100%;
+    background-color: #f8f8f8;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mark-left ul{
+    padding-bottom: 3rem;
+}
+.mark-left li{
+    position: relative;
+    box-sizing: border-box;
+    color: #6d6d6d;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    background: right top no-repeat;
+    background-size: auto 70%;
+    height:1.2rem;
+    line-height:1.2rem;
+}
+.mark-left ul .xzli{
+    border-left:0.14rem solid #ffd600;
+    box-sizing: border-box;
+}
+.mark-scoll li a{
+    color: #777;
+    display: block;
+}
+
+.mark-right{
+    width:76.25%;
+    position: relative;
+}
+.mark-right-head{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 55;
+    width: 100%;
+    display: flex;
+    height:1.3rem;
+    background: #ffffff;
+    color:#777;
+}
+.mrh-box{
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    top: 1.3rem;
+    padding: 0.3rem;
+}
+.mrh-box{
+
+}
+.cover{
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 10;
+
+}
+.mrh-box .mrh-item{
+    float: left;
+    border: solid 1px #e0e0e0;
+    padding: .1rem .2rem;
+    margin-left: .1rem;
+    margin-top: .2rem;
+    border-radius: 0.1rem;
+    font-size: .3rem;
+    color: #777;
+    background-color: #fff;
+}
+
+.mrh-all{
+    width: 50%;
+    text-align: center;
+    line-height:1.3rem;
+    border-bottom: 0.03rem solid #f0f0f0;
+}
+.mrh-all:nth-child(odd){
+    border-right: 0.03rem solid #f0f0f0;
+}
+.mrh-all i{
+    transition:transform 0.2s;
+}
+.mrh-all .rot{
+    transform:rotate(-180deg)
+}
+.mark-right-body{
+    height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mrb-ul{
+    padding-top: 1.3rem;
+}
+.mrb-li{
+    height:2.9rem;
+    border-bottom: 0.03rem solid #f0f0f0;
+    background: #ffffff;
+    padding: 0.2rem;
+    position: relative;
+}
+.mrb-li a{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+.mrb-li img{
+    height:100%;
+    float: left;
+}
+.mrb-li .mrb-li-mess{
+    float: right;
+    padding-right:0.5rem;
+    width: 60%;
+}
+.mrb-size{
+    color: #999;
+}
+.mrb-price{
+    color: #ff3800;
+}
+.mrb-price span{
+    color: #999;
+}
+.mrb-li-mess p{
+    height:0.5rem;
+    line-height:0.5rem;
+}
+.addsubbox{
+    width:2.5rem;
+    position: absolute;
+    bottom:0.5rem;
+    right:0;
+    padding-right: 0.4rem;
+}
+.addsubbox span{
+    display: block;
+    width: 0.5rem;
+    float: left;
+    text-align: center;
+    line-height: 0.7rem;
+    background: #ffffff;
+    font-size: 0.5rem;
+}
+.addsubbox .addsub{
+    width: 0.8rem;
+    height:0.8rem;
+    color: #f40;
+    border-radius: 50%;
+    border:0.05rem solid #f0f0f0;
+    font-weight: 700;
+    font-family: "黑体";
+}

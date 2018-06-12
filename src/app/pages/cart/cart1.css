@@ -1,0 +1,103 @@
+a{
+    display: block;
+    height:100%;
+}
+.cartbox{
+    padding: 0.4rem;
+    /*background: #ffffff;*/
+}
+.cart-item{
+    height:3rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    border-bottom: 0.02rem solid #f0f0f0;
+    background: #ffffff;
+}
+.cart-item>a{
+    width:30%;
+    padding:0.5rem
+}
+.cart-item img{
+    height:100%;
+}
+.cart-item-mess{
+    padding:0.5rem 0 0 0.5rem;
+    width:60%;
+    position: relative;
+}
+.cim-name{
+    font-size: 0.4rem;
+}
+.cim-price{
+    font-size: 0.5rem;
+    color: #e84000;
+}
+.cim-numbox{
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.3rem;
+    display: flex;
+    line-height: 1rem;
+
+}
+.cim-num{
+    display: block;
+    font-size: 0.4rem;
+    width: 0.5rem;
+    height:1rem;
+    text-align: center;
+}
+.cim-addnum{
+    display: block;
+    width: 1rem;
+    height:1rem;
+    color: #f40;
+    border-radius: 50%;
+    border:0.05rem solid #f0f0f0;
+    font-weight: 700;
+    font-family: "黑体";
+    text-align: center;
+    background: #ffffff;
+    font-size: 0.5rem;
+}
+.cim-del{
+    font-size: 0.4rem;
+}
+.checked{
+    width:10%;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.cartbox input{
+    width:0.5rem;
+    height:0.5rem;
+}
+.close-account{
+    height:1.6rem;
+    background: #ffffff;
+    display: flex;
+}
+.close-account label{
+    height:100%;
+    width: 30%;
+    line-height: 1.6rem;
+    font-size: 0.4rem;
+    padding-left: 0.3rem;
+}
+.zong{
+    height:100%;
+    width:40%;
+    line-height: 1.6rem;
+    font-size: 0.4rem;
+}
+.zong span{
+    color: #E80013;
+}
+.close-btn{
+    width: 30%;
+    height:100%;
+    background-color: #ffd600;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0.4rem;
+}

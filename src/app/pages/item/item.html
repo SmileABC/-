@@ -1,0 +1,57 @@
+<header class="itempage">
+    <a ui-sref="{{oldurl}}" ng-click="changeisshow(true)">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <p>{{aitemData.keywords}}</p>
+</header>
+<div class="itemmess">
+    <img ng-src="{{aitemData.img}}" alt="">
+    <p class="item_name">{{itemData.long_name}}</p>
+    <p class="item_price">
+        ￥{{aitemData.price}} <span>￥{{aitemData.market_price}}</span>
+    </p>
+</div>
+<div class="item_message">
+    <p class="im_h">商品详情</p>
+    <p class="im_name">
+        <span class="im_first">
+            品牌:
+        </span>
+        <span class="im_last">
+            {{aitemData.brand_name}}
+        </span>
+    </p>
+    <p class="im_name">
+        <span class="im_first">
+            产品规格:
+        </span>
+        <span class="im_last">
+            {{aitemData.specifics}}
+        </span>
+    </p>
+    <p class="im_name">
+        <span class="im_first">
+            保质期限:
+        </span>
+        <span class="im_last">
+            {{aitemData.safe_day+itemData.safe_unit_desc}}
+        </span>
+    </p>
+</div>
+<footer class="itemfoot">
+    <div class="collect">
+        <i class="fa fa-heart-o"></i>
+        <p>收藏</p>
+    </div>
+    <div class="item_join">
+        <p>添加商品：</p>
+        <div class="j_box">
+            <span class="addsub">-</span>
+            <span>{{'0'}}</span>
+            <span class="addsub">+</span>
+        </div>
+    </div>
+    <div class="shopping-cart">
+        <i class="fa fa-shopping-cart"></i>
+    </div>
+</footer>

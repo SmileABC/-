@@ -1,0 +1,103 @@
+
+#app{
+	overflow: hidden;
+	padding-top: 1.5rem;
+	height:100%;
+}
+.view{
+	height:100%;
+	overflow-y: auto;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear:both;
+}
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1.5rem;
+	background-color: #ffd600;
+	z-index: 10;
+}
+footer{
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1.5rem;
+	background-color: #fff;
+	z-index: 10;
+}
+
+footer a{
+	display: block;
+	flex-grow: 1;
+	text-align: center;
+	overflow: hidden!important;
+}
+
+footer dl dt {
+	height: 0.777778rem;
+	padding-top: 0.208333rem;
+}
+
+
+footer dl span {
+	display: inline-block;
+	width: 0.513889rem;
+	height: 0.513889rem;
+}
+
+
+footer .home span{
+	background: url(../img/home.png) no-repeat;
+	background-size: 0.513889rem;
+}
+footer .mark span{
+	background: url(../img/market.png) no-repeat;
+	background-size: 0.513889rem;
+}
+footer .cart span{
+	background: url(../img/cart.png) no-repeat;
+	background-size: 0.513889rem;
+}
+footer .mine span{
+	background: url(../img/mine.png) no-repeat;
+	background-size: 0.513889rem;
+}
+
+footer .homeActive span{
+	background: url(../img/home1.png) no-repeat;
+	background-size: 0.513889rem;
+}
+footer .markActive span{
+	background: url(../img/market1.png) no-repeat;
+	background-size: 0.513889rem;
+}
+footer .cartActive span{
+	background: url(../img/cart1.png) no-repeat;
+	background-size: 0.513889rem;
+}
+footer .mineActive span{
+	background: url(../img/mine1.png) no-repeat;
+	background-size: 0.513889rem;
+}
+.cartnum{
+	font-style: normal;
+	color: #ffffff;
+	position: absolute;
+	top:0;
+	right:0.8rem;
+	width: 0.5rem;
+	height:0.5rem;
+	border-radius: 50%;
+	background: #E80013;
+	text-align: center;
+	line-height: 0.5rem;
+}
+

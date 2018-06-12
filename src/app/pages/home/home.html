@@ -1,0 +1,93 @@
+<div class="homezj">
+	<div class="carousel">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="i in carousel">
+                    <a href="">
+                        <img ng-src="{{i.activity.img}}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+	</div>
+    <div class="active">
+        <ul class="active-ul">
+            <li ng-repeat="i in active">
+                <a href="">
+                    <img ng-src="{{i.activity.img}}" alt="">
+                    <p>{{i.activity.name}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="active-tja">
+        <div class="active-tj-head">
+            <img ng-src="{{activesn.head_img}}" alt="">
+        </div>
+        <ul class="active-tj">
+            <li ng-repeat="i in activesn.act_rows">
+                <img ng-src="{{i.activity.img}}" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="active-tja">
+        <div class="active-tj-head">
+            <img ng-src="{{activeBLD.act_rows[0].act_rows[0].chead_detail.img}}" alt="">
+        </div>
+        <ul class="active-tj">
+            <li ng-repeat="i in activeBLD.act_rows[1].act_rows">
+                <img ng-src="{{i.cactivity_detail.img}}" alt="">
+            </li>
+        </ul>
+        <ul class="active-tj">
+            <li ng-repeat="i in activeBLD.act_rows[2].act_rows">
+                <a href="">
+                    <img ng-src="{{i.cicons_detail.img}}" alt="">
+                    <p>{{i.cicons_detail.name}}</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="active-foot">
+            <li ng-repeat="i in activeBLD.act_rows[3].act_rows">
+                <a href="">
+                    <img ng-src="{{i.activity.img}}" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <ul class="activeyx">
+        <li class="activeyx-item" ng-repeat="(ind,i) in activeyx.act_rows">
+            <div class="activeyx-item-head clearfix">
+                <span class="activeyx-ih-left" ng-style="{borderColor:'#'+i.category_detail.category_color,color:'#'+i.category_detail.category_color}">{{i.activity.name}}</span>
+                <span class="activeyx-ih-right">更多 ></span>
+            </div>
+            <div class="activeyx-item-banner">
+                <a href="">
+                    <img ng-src="{{i.activity.img}}" alt="">
+                </a>
+            </div>
+            <ul class="activeyx-item-foot">
+                <li ng-repeat="(index,item) in i.category_detail.goods">
+                    <div class="act-if-head">
+                        <a ui-sref="item({index:index,index2:ind})" ng-click="changeisshow(false,'home')">
+                            <img ng-src="{{item.app_mimg}}" alt="">
+                        </a>
+                    </div>
+                    <div class="act-if-item-mess">
+                        <p class="act-if-item-name">
+                            {{item.name}}
+                        </p>
+                        <div class="act-if-item-pro">
+                            {{delname(item.long_name)}}
+                        </div>
+                        <p class="act-if-item-price">
+                            {{'￥'+item.partner_price}}
+                            <span>{{'￥'+item.market_price}}</span>
+                            <i ng-click="joincart(item,true)">+</i>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

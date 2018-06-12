@@ -1,0 +1,68 @@
+<div class="markbox clearfix">
+	<div class="mark-left" ng-style="{height:height}">
+		<ul class="mark-scoll">
+			<li ng-repeat="i in itemname" ng-class="classifybtnsty==$index?'xzli':''" ng-style="{backgroundImage:'url('+i.flag+')'}">
+				<!--<img ng-src="{{i.flag}}" alt="">-->
+				<a ng-click="classifybtn($index,i)">{{i.name}}</a>
+			</li>
+		</ul>
+	</div>
+	<div class="mark-right">
+		<div class="mark-right-head">
+			<div class="mrh-all" ng-click="coverbox(0,$event)">
+				全部分类
+				<i class="fa fa-angle-down" ng-class="cover[0]?'rot':''"></i>
+			</div>
+			<div class="mrh-all" ng-click="coverbox(1,$event)">
+				综合排序
+				<i class="fa fa-angle-down" ng-class="cover[1]?'rot':''"></i>
+			</div>
+			<ul class="mrh-box"  ng-show="cover[0]&&cover[2]">
+				<li class="mrh-item" ng-repeat="x in cidss" ng-click="classRank(x)">
+					{{x}}
+				</li>
+			</ul>
+			<ul class="mrh-box"  ng-show="cover[1]&&cover[2]">
+				<li class="mrh-item" ng-click="rank(0)">
+					综合排序
+				</li>
+				<li class="mrh-item" ng-click="rank(1)">
+					销量最高
+				</li>
+				<li class="mrh-item" ng-click="rank(2)">
+					价格最低
+				</li>
+				<li class="mrh-item" ng-click="rank(3)">
+					价格最高
+				</li>
+			</ul>
+		</div>
+		<div class="mark-right-body">
+			<div class="cover" ng-show="cover[2]"></div>
+			<ul class="mrb-ul">
+				<li class="mrb-li" ng-repeat="i in itemproducts">
+					<a ui-sref="item({category_id:i.category_id,child_cid:i.child_cid,index:$index})" ng-click="changeisshow(false,'mark')">
+						<img ng-src="{{i.img}}" alt="">
+						<div class="mrb-li-mess">
+							<p class="mrb-name">{{i.keywords}}</p>
+							<div class="mrb-promotion">
+								<span></span>
+							</div>
+							<p class="mrb-size">{{i.specifics}}</p>
+							<p class="mrb-price">
+								{{'￥'+i.partner_price}}
+								<span>{{'￥'+i.market_price}}</span>
+							</p>
+						</div>
+					</a>
+					<div class="addsubbox">
+						<span class="addsub" ng-click="joincart(i,false)" ng-show="itemsData[i.id].num>0">-</span>
+						<span ng-show="itemsData[i.id].num>0">{{itemsData[i.id].num}}</span>
+						<span class="addsub" style="float: right" ng-click="joincart(i,true)">+</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+

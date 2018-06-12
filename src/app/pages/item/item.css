@@ -1,0 +1,142 @@
+.itempage{
+    background:#f9fafd;
+    height:1.5rem;
+    line-height: 1.5rem;
+    border: 0.02rem solid #e0e0e0;
+}
+.itempage a{
+    display: block;
+    width: 1rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    left: 0;
+}
+.itempage p{
+    text-align: center;
+}
+.itemmess{
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 0.3rem;
+}
+.itemmess img{
+    width: 100%;
+}
+.itemmess p{
+    margin: 0.2rem 0 0.4rem;
+}
+.item_name{
+    font-size: 0.6rem;
+    text-align: center;
+}
+.item_price{
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #f40;
+}
+.collect{
+    padding-top: 0.2rem;
+    text-align: center;
+    width: 15%;
+    height:100%;
+}
+.collect i{
+    font-size: 0.5rem;
+}
+.collect p{
+    font-size: 0.4rem;
+}
+.item_join{
+    width: 84.5%;
+    height:100%;
+    line-height: 1.5rem;
+}
+.item_join p{
+    float: left;
+    font-size: 0.5rem;
+}
+.item_join div{
+    float: left;
+
+}
+.j_box{
+    display: flex;
+    height:100%;
+    line-height: 1.5rem;
+    align-items: center;
+}
+.itemfoot{
+    border: 0.02rem solid #f0f0f0;
+}
+.j_box span{
+    display: block;
+    text-align: center;
+    line-height: 1rem;
+    width: 1rem;
+    height:1rem;
+}
+.j_box .addsub{
+    color: #f40;
+    border-radius: 50%;
+    border:0.05rem solid #f0f0f0;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: "黑体";
+}
+.shopping-cart{
+    position: absolute;
+    bottom:0.3rem;
+    right:0.3rem;
+    width:2rem;
+    height:2rem;
+    background: #ffd600;
+    border-radius: 50%;
+    border: 0.02rem solid #f0f0f0;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.item_price span{
+    text-decoration: line-through;
+    color: #6d6d6d;
+    font-size: 0.4rem;
+}
+.item_message{
+    padding: 0.4rem;
+    background: #ffffff;
+    font-size: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.im_h{
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #e0bd6a;
+}
+.im_name{
+    padding: 0.3rem 0;
+}
+.im_first{
+    width:40%;
+    color:#999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
